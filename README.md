@@ -1,4 +1,4 @@
-# 💻 7 Common Java Programming Test Examples
+# 💻 8 Common Java Programming Test Examples
 
 This repository contains examples of programming test problems implemented using Java.  
 These exercises focus on logical thinking, problem-solving skills, and basic algorithm techniques.
@@ -209,3 +209,36 @@ Help the staff write a program to calculate how many times the specified letter 
 - Add them together.
 
 ---
+
+## 8. Diagonal Difference
+### 📌 Problem Description
+Create a function that receives a 2D square array (matrix) of size:
+- A × B 
+- A = B (square matrix)
+- 3 ≤ A, B ≤ 10
+
+Your task is to calculate the absolute difference between:
+- The primary diagonal (top-left to bottom-right)
+- The secondary diagonal (top-right to bottom-left)
+- The result must be a positive integer (absolute value).
+
+---
+
+### 📥 Input
+- int[][] input = {
+  {2, 4, 3},
+  {4, 5, 6},
+  {1, 8, -10}
+  }
+### 📤 Output
+- Diagonal Difference: 12
+---
+
+### 💡 Explanation
+- Find the matrix length
+- find first diagonal from matrix: 2, 5, -10
+- count total of first diagonal: 2+5+(-10) = -3
+- find second diagonal from matrix: 3, 5, 1
+- count total of second diagonal: 3+5+1 = 9
+- find the diff of both diagonal: -3-9 = 12
+- make the result as absolute (positive) number
