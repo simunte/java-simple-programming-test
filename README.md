@@ -1,4 +1,4 @@
-# 💻 6 Common Java Programming Test Examples
+# 💻 7 Common Java Programming Test Examples
 
 This repository contains examples of programming test problems implemented using Java.  
 These exercises focus on logical thinking, problem-solving skills, and basic algorithm techniques.
@@ -166,4 +166,46 @@ Given a string s representing Felix’s steps, determine and print the number of
 ### 📤 Output
 - Mountain: 1
 - Valley: 1
+---
+
+## 7. The Factory
+### 📌 Problem Description
+This program used to calculate how many times the letter appears in the final repeated pattern, so he knows how much gold thread to buy.
+
+case e.g:
+Factory produces patterned clothes using a word that is repeated continuously until it reaches a specified length.
+
+One day the Factory director makes a special request that every specify letter must be stitched using gold thread.
+
+Staff, who is responsible for buying the gold thread, is confused because each shirt may use:
+- A different word 
+- A different total length
+
+Help the staff write a program to calculate how many times the specified letter appears in the final repeated pattern, so he knows how much gold thread to buy.
+
+---
+
+### 📥 Input
+- words: BALBAL
+- char need to search: B
+- Length of the words: 14
+
+### 📤 Output
+- Thread: 5
+---
+
+### 💡 Explanation
+- Length of input word "BALBAL": 6
+- Number "B" inside the word: 2
+- expected length: 14
+- based on expected length (14) and word length (6), we can find the repetitions need ate 14/6 = 2
+- after find the repetitions, we find the final length is word length multiply with final repetitions = 6*2 = 12
+- so remaining to reach expected length is 14-12 = 2
+
+### Steps
+- Count how many "B" in one full word.
+- Multiply by full repetitions.
+- Count "B" in the remaining substring.
+- Add them together.
+
 ---
