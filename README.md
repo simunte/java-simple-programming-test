@@ -1,4 +1,4 @@
-# 💻 8 Common Java Programming Test Examples
+# 💻 10 Common Java Programming Test Examples
 
 This repository contains examples of programming test problems implemented using Java.  
 These exercises focus on logical thinking, problem-solving skills, and basic algorithm techniques.
@@ -242,3 +242,64 @@ Your task is to calculate the absolute difference between:
 - count total of second diagonal: 3+5+1 = 9
 - find the diff of both diagonal: -3-9 = 12
 - make the result as absolute (positive) number
+
+---
+
+## 9. Stair Case
+### 📌 Problem Description
+Alvin is an athletic person. When climbing stairs, he can:
+- Take 1 step at a time, or
+- Take 2 steps at a time (skipping one step)
+
+Given a staircase with ***n*** steps, we want to calculate how many combination ways can reach the top.
+
+---
+
+### 📥 Input
+- int stairs total steps
+### 📤 Output
+- n = 3 → output 3
+- n = 4 → output 5
+
+---
+
+### 💡 Explanation
+Case 1: n = 3 steps → possible ways:
+- 1 + 1 + 1
+- 1 + 2 
+- 2 + 1
+- Total combinations = 3
+
+Case 2: n = 4 steps → possible ways:
+- 1 + 1 + 1 + 1
+- 1 + 1 + 2
+- 1 + 2 + 1
+- 2 + 1 + 1
+- 2 + 2
+- Total combinations = 5
+
+## 10. Valid Parentheses
+### 📌 Problem Description
+The program used to check if JSON-like request string has valid brackets.
+
+The string contains three types of brackets:
+- Parentheses ( )
+- Square brackets [ ]
+- Curly braces { }
+
+A request is valid if all brackets are properly opened and closed in the correct order.
+
+---
+
+### 📥 Input
+- String of json brackets
+### 📤 Output
+- true if valid, false if in-valid
+
+---
+
+### 💡 Examples
+- Input: (), Output: true
+- Input: ([]{}), Output: true
+- Input: ([)], Output: false
+- Input: {[}, Output: false
